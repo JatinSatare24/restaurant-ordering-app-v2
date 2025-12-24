@@ -1,32 +1,34 @@
-# Restaurant Ordering App
+# 🍔 Restaurant Ordering App 
 
-A modern, high-performance web application designed to handle real-time food ordering. This project focuses on **Asynchronous JavaScript**, state management, and building a seamless user experience from menu browsing to checkout.
-
----
-
-## 🚀 Key Features
-
-* **Dynamic Menu Population:** Fetches menu items dynamically using the `fetch()` API, ensuring the menu is always up-to-date.
-* **Real-time Cart Management:** Seamlessly add or remove items with automatic subtotal and tax calculations.
-* **Asynchronous Checkout Flow:** Implements `async/await` to simulate a real-world payment gateway interaction.
-* **Conditional Rendering:** Displays order confirmation and "Thank You" messages based on the application state.
-* **Responsive UI:** Optimized for a mobile-first experience using CSS Flexbox and Grid.
+A high-performance, mobile-first restaurant ordering application built during my **2026 Developer Sprint**. This version moves beyond static layouts to implement dynamic menu rendering, real-time order tracking, and a seamless checkout experience.
 
 ---
 
-## 🛠️ Technical Stack
-
-* **HTML5 & CSS3:** Semantic structure and modern layout techniques.
-* **JavaScript (ES6+):** Leveraging Arrow Functions, Template Literals, and Destructuring.
-* **APIs:** Integrated with a mock backend to handle data fetching and order posting.
+## 🚀 Key Features (v2 Update)
+* **Dynamic Menu Rendering:** Instead of hard-coded HTML, the menu is now generated programmatically from a data object, allowing for easy updates.
+* **Real-Time Order Logic:** Users can add/remove items with the total price updating instantly.
+* **Checkout Modal:** A streamlined payment flow using a simulated secure checkout interface.
+* **Semantic UI:** Improved accessibility and SEO by using proper HTML5 structure.
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Tech Stack
+* **Frontend:** HTML5, CSS3 (Flexbox/Grid)
+* **Logic:** Vanilla JavaScript (ES6+)
+* **Data Handling:** JSON-based menu structures and Array manipulation.
+* **Version Control:** Git & GitHub (Daily bifurcated commits).
 
-```text
-├── index.html       # Application structure
-├── index.css        # Global styles and responsive design
-├── index.js         # Core logic: Event listeners and State management
-├── data.js          # Menu data configuration
-└── README.md        # Project documentation
+---
+
+## 🧠 Development Focus: "The Engine"
+In this version, I focused heavily on the **separation of concerns**. 
+1.  **Data:** Isolated the menu items into a separate data file for scalability.
+2.  **Logic:** Implemented a "Single Source of Truth" for the order state, ensuring the UI always reflects the current cart contents.
+3.  **UI:** Maintained a "Green-Square" consistency by pushing UI improvements and logic updates in separate, documented layers.
+
+---
+
+## ⚡ How to Run
+1. Clone the repo: `git clone [your-repo-link]`
+2. Open `index.html` in your browser.
+3. Start ordering!
